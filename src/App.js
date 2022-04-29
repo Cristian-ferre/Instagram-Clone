@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Post from "./components/posts/Post";
-import './App.css';
+import Header from "./components/header/Header"
+import '../src/components/header/Header';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -33,18 +34,7 @@ function App() {
   return (
     <div className="app">
 
-      <div className="app__header">
-        <div className="app__headerWrapper">
-          <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-            alt="Instagram original logo" title="Instagram original logo"
-          />
-          <div className="app__headerButtons">
-            <button className="text__button">Logout</button>
-            <button className="primary__button">Log in</button>
-            <button className="text__button">Sign up</button>
-          </div>
-        </div>
-      </div>
+      <Header/>
 
       <div className="timeline">
         {posts.map((post) => (
@@ -54,7 +44,7 @@ function App() {
             imageUrl={post.imageUrl}
           />
         ))}
-        <Post  />
+        <Post />
       </div>
     </div>
   );
