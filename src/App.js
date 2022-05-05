@@ -1,7 +1,10 @@
-import React, { useState } from "react";
-import Post from "./components/posts/Post";
+import React, { useState } from "react"
+import Post from "./components/posts/Post"
 import Header from "./components/header/Header"
-import '../src/components/header/Header';
+import Sidebar from "./components/sidebar/Sidebar"
+import Story from "./components/story/Story"
+import "./App.css"
+
 
 function App() {
   const [posts, setPosts] = useState([
@@ -31,23 +34,43 @@ function App() {
     },
   ]);
 
+
   return (
     <div className="app">
 
-      <Header/>
+      <Header />
 
-      <div className="timeline">
-        {posts.map((post) => (
-          <Post
-            username={post.username}
-            caption={post.caption}
-            imageUrl={post.imageUrl}
-          />
-        ))}
-        <Post />
+
+      <div className="estruturaMain">
+
+
+        <div className="timeline">
+          <Story />
+
+
+
+          {posts.map((post) => (
+
+            <Post
+              username={post.username}
+              caption={post.caption}
+              imageUrl={post.imageUrl}
+            />
+          ))}
+          <Post />
+        </div>
+
+        <div>
+          <Sidebar />
+        </div>
+
       </div>
+
+
+
     </div>
   );
 }
 
 export default App;
+

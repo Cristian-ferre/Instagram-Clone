@@ -1,26 +1,77 @@
-.app__header {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    background-color: white;
-    height: 54px;
-    display: flex;
-    align-items: center;
-    object-fit: contain;
-    border-bottom: 1px solid lightgray;
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 980px;
+  width: 100vw;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 10px;
+  align-items: center;
+ 
+}
+
+.border {
+  border-bottom: 1px solid lightgray;
+  overflow: hidden;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+.busca {
+  display: flex;
+}
+
+.busca input {
+  border: 0;
+  background-color: #efefef;
+  width: 240px;
+  height: 36px;
+  border-radius: 8px;
+  margin: 0 20px;
+}
+
+.busca input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+[placeholder] {
+  padding-left: 40px;
+  line-height: 25px;
+}
+
+.buscaIcones {
+  display: flex;
+}
+
+.icones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin: 0 10px;
+  width: 270px;
+}
+
+.iconeBusca {
+  display: block;
+  position: relative;
+  width: 15px;
+  right: 250px;
+  bottom: 2px;
+}
+
+.tamanhoIcones {
+  max-width: 30px;
+}
+
+.fotoPerfil {
+  max-width: 37px;
+}
+
+@media (max-width: 680px) {
+  .busca {
+    display: none;
+    transition: 100s;
   }
-  
-  .app__headerWrapper {
-    max-width: 975px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .app__headerButtons {
-    display: flex;
-    column-gap: 15px;
-  }
+}

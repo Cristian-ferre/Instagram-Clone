@@ -1,0 +1,93 @@
+.sidebar {
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.sidebar h2,
+h3,
+p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.sidebar h2 {
+    padding: 7px 0;
+}
+
+.sidebar h3 {
+    display: flex;
+    align-items: center;
+    color: #0095f6;
+}
+
+.sidebar div {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+}
+
+.estrura_img_perfil img {
+    width: 100px;
+}
+
+.imgsugetoes {
+    width: 100%;
+    height: 100%;
+    max-width: 35px;
+    max-height: 35px;
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 1px;
+    border: 1px solid #8e8e8e50;
+    margin: 0;
+}
+
+.sugestoes p {
+    color: #8e8e8ebe;
+}
+
+.sugestoes h3 {
+    margin-left: 90px;
+    color: #000;
+}
+
+.sidebar div img,
+h2,
+p {
+    margin: 0 10px;
+}
+
+.footerSidebar ul li::after {
+    content: '\00B7';
+    margin: 0 0.25em 0 0.25em
+}
+
+.footerSidebar {
+    display: flex;
+    flex-direction: column;
+    color: #8e8e8e7e;
+    font-size: 12px;
+    padding-top:20px ;
+}
+
+.footerSidebar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 20px 20px 10px;
+    list-style-type: none;
+}
+
+@media (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}
