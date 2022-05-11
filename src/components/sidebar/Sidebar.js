@@ -12,7 +12,7 @@ export default (props) => {
             <div>
                 <div>
                     <div className="estrura_img_perfil" >
-                        <img className="imgstory" src={fotoPerfil} alt="" />
+                        <img className="imgperfil" src={fotoPerfil} alt="" />
                     </div>
                     <h2 >Cristianf_Olv</h2>
                 </div>

@@ -1,66 +1,30 @@
-.containers{
+.containerstory {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    align-items: flex-start;
     background-color: #f9f9f9;
-    height: 110vh;
-}
-
-.horizontal-scroll {
-    width: 600px;
-    height: 80px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid lightgray;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.horizontal-scroll .btn-scroll {
-    background-color: #fff;
-    color: #999;
-    padding: 5px 8px;
-    box-shadow: 0 0 10px #999;
-    padding: 5px 8px;
-    border: 0;
-    border-radius: 50%;
-    margin: 0 50px;
-    z-index: 1;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.storys-container{
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    transition: 0.5s all ease-out;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.story-circle {
-    background: linear-gradient(rgb(231,0,231), rgba(255,115,0));
-    width: 60px;
-    height: 60px;
-    margin: 15px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gradient {
+    background: linear-gradient(rgb(231, 0, 231), rgba(255, 115, 0));
     border-radius: 50%;
-    transform: rotatez(45deg);
+    padding: 2px;
+    margin-left: 10px;
 }
 
-.story-circle img{
+.containerstoryimg img {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    transform: rotatez(-45deg);
-
+    border-color: blue;
+    
 }
 
+.containerstory h2{
+    margin: 0;
+}
